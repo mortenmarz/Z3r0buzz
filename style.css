@@ -1,0 +1,51 @@
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #FEC47F;
+    font-size: 5em;
+    font-style: italic;
+}
+p, nav {
+    font-family: 'Lato', sans-serif;
+}
+header {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+.logo img {
+    height: 150px;
+}
+nav {
+    overflow: hidden;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+nav ul li a {
+    color: #7CB06D; /* Farven på linksene er sat til at være lysegrønne */
+    text-decoration: none;
+    padding: 14px 16px;
+    font-size: 20px;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    color: #567D46; /* Skriftfarven bliver mørkere ved hover */
+    font-style: italic;
+}
+main {
+    background-image: url('images/mongoehh.jpg');
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
