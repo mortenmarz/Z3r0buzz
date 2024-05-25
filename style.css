@@ -1,10 +1,8 @@
-/* Generelle stilarter */
 body {
     margin: 0;
     font-family: 'Lato', sans-serif;
 }
 
-/* Header stilarter */
 header {
     padding: 1.25em;
     display: flex;
@@ -80,7 +78,7 @@ main {
     color: #fff;
     font-weight: lighter;
     font-size: 1.5em;
-    transition: transform 0.2s ease; /* Jeg vil gerne have lidt visuelle effekter, så har tilføjet en glidende overgang til højre side når man hover teksten */
+    transition: transform 0.3s ease; /* Jeg vil gerne have lidt visuelle effekter, så har tilføjet en glidende overgang til højre side når man hover teksten */
     line-height: 1.6;
     float: right; /* kan også ændres til text-align: center ??? */
 }
@@ -94,7 +92,7 @@ main {
 .hero .btn {
     font-family: 'Lato', sans-serif;
     font-weight: bold;
-    font-size: 1.35em;
+    font-size: 1.25em;
     padding: 0.625em 1.25em;
     background-color: #7CB06D;
     color: #000000;
@@ -112,30 +110,36 @@ main {
     background-color: #FEC47F;
     color: #fff;
 }
-.image-container {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 3em;
-    width: 90vw;
+
+h2 {
+    margin-top: 2em;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.9em;
+    text-align: center;
 }
 
+.image-section {
+    display: flex;
+    justify-content: space-around;
+    margin: 2em;
+    background-color: #7CB06D;
+    width: 98%;
+    padding: 3em;
+    box-sizing: border-box;
+}
 
 .image-box {
-    text-align: center; /* Centrerer indholdet i boksen */
-    margin-right: 3em;
+    text-align: center;
+    width: 30vw;
 }
-
-.image-box:last-child {
-    margin-right: 0; /* Fjern højremargen fra det sidste billede for at undgå overskydende mellemrum */
-}
-
 
 .image-box img {
-    max-width: 100%; /* Gør billedet responsivt */
-    height: auto; /* Sørger for, at højden justeres i forhold til bredden */
+    max-width: 100%;
+    height: auto;
 }
 
-
 .image-box p {
-    margin-top: 10px; /* Lidt afstand mellem billede og tekst */
+    margin-top: 0.5em;
+    font-size: 1.2em;
+    color: #000000;
 }
