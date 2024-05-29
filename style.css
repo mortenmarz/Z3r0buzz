@@ -73,15 +73,14 @@ main {
     font-family: 'Montserrat', sans-serif;
     color: #FEC47F;
     font-size: 8em;
-    font-style: italic;
-    margin: 0.5em;
+    margin: 0.25em;
 }
 
 .hero h3 {
     font-family: 'Montserrat', sans-serif;
     color: #fff;
     font-weight: lighter;
-    font-size: 1.5em;
+    font-size: 1.6em;
     transition: transform 0.3s ease; /* Jeg vil gerne have lidt visuelle effekter, så har tilføjet en glidende overgang til højre side når man hover teksten */
     line-height: 1.6;
     float: right; /* kan også ændres til text-align: center ??? */
@@ -89,7 +88,7 @@ main {
 
 .hero h3:hover {
     transform: translateX(6.5em); /* Flytter teksten til højre ved hover */
-    color: #ADD8E6;
+    color: #FEC47F;
     font-weight: bold;
 }
 
