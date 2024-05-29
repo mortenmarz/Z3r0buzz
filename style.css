@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: 'Lato', sans-serif;
+    background-color: #ffffff;
 }
 
 header {
@@ -11,7 +12,8 @@ header {
 }
 
 .logo img {
-    height: 5em;
+    height: 11em;
+    width: 11em;
 }
 
 nav {
@@ -35,12 +37,13 @@ nav ul li a {
     color: #7CB06D;
     text-decoration: none;
     padding: 0.875em 1em;
-    font-size: 1.30em;
+    font-size: 1.45em;
     font-weight: bold;
+    transition: color 0.15s ease; /* Glidende overgang for farveskift ved hover */
 }
 
 nav ul li a:hover {
-    color: #567D46;
+    color: #FEC47F;
 }
 
 main {
@@ -48,7 +51,8 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 6.25em;
+    margin-top: 6em;
+    margin-bottom: 3em;
 }
 
 /* Hero stilarter */
@@ -57,10 +61,10 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url('images/mongoehh.jpg');
+    background-image: url('images/hero1rigtig.png');
     background-size: cover;
     background-position: center;
-    height: 44em; /* ændr måske til 60vh ???? */
+    height: 60vh;
     width: 98vw;
     position: relative;
 }
@@ -68,7 +72,7 @@ main {
 .hero h1 {
     font-family: 'Montserrat', sans-serif;
     color: #FEC47F;
-    font-size: 6em;
+    font-size: 8em;
     font-style: italic;
     margin: 0.5em;
 }
@@ -84,7 +88,7 @@ main {
 }
 
 .hero h3:hover {
-    transform: translateX(5.5em); /* Flytter teksten til højre ved hover */
+    transform: translateX(6.5em); /* Flytter teksten til højre ved hover */
     color: #ADD8E6;
     font-weight: bold;
 }
@@ -103,7 +107,7 @@ main {
     transition: background-color 0.2s ease;
     margin-top: auto;
     position: absolute;
-    bottom: 2em;
+    bottom: 3em;
 }
 
 .hero .btn:hover {
@@ -112,9 +116,9 @@ main {
 }
 
 h2 {
-    margin-top: 2em;
+    margin-top: 1.5em;
     font-family: 'Montserrat', sans-serif;
-    font-size: 2.9em;
+    font-size: 3.5em;
     text-align: center;
 }
 
@@ -122,15 +126,15 @@ h2 {
     display: flex;
     justify-content: space-around;
     margin: 2em;
-    background-color: #7CB06D;
-    width: 98%;
+    background-color: #89A67E;
+    width: 95%;
     padding: 3em;
     box-sizing: border-box;
 }
 
 .image-box {
-    text-align: center;
-    width: 30vw;
+    text-align: justify;
+    width: 25vw;
 }
 
 .image-box img {
@@ -140,6 +144,53 @@ h2 {
 
 .image-box p {
     margin-top: 0.5em;
-    font-size: 1.2em;
+    font-size: 1.4em;
     color: #000000;
+}
+
+/* Footer-stilarter */
+footer {
+    background-color: #000000;
+    color: white; 
+    text-align: center; 
+    padding: 1em 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 1.5em 0; /* Margin for paragrafen */
+    margin-bottom: 3em;
+}
+
+footer nav {
+    margin-top: 60em; /* Lidt afstand til toppen af navigationen */
+    margin: 1.5em;
+}
+
+footer nav ul {
+    list-style-type: none; /* Fjern standard liste-stil */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centrér listen */
+    gap: 1.25em; /* Afstand mellem listeelementerne */
+    margin-bottom: 1em;
+}
+
+footer nav ul li {
+    display: inline;
+}
+
+footer nav ul li a {
+    color: #7CB06D; /* Farve på linkteksten */
+    text-decoration: none; /* Fjern underlinje fra links */
+    padding: 0.5em 1em; /* Polstring omkring linkteksten */
+    font-size: 1.1em; /* Skriftstørrelse */
+    transition: color 0.2s ease; /* Glidende overgang for farveskift ved hover */
+}
+
+footer nav ul li a:hover {
+    color: #FEC47F; /* Farve på linkteksten ved hover */
 }
