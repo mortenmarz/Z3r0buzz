@@ -16,10 +16,15 @@
         <a href="index.html" class="logo">
             <img src="images/logo.png" alt="Zerobuzz Brew Logo">
         </a>
+        <div class="burger-menu" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
         <nav>
             <ul>
-                <li><a href="#section1"><u>Home</u></a></li>
-                <li><a href="#section1">Produkter</a></li>
+                <li><a href="index.html"><u>Home</u></a></li>
+                <li><a href="produkter.html">Produkter</a></li>
                 <li><a href="#section2">Om Os</a></li>
                 <li><a href="#section3">FAQ</a></li>
                 <li><a href="#section4">Events</a></li>
@@ -32,23 +37,24 @@
         <section id="hero" class="hero">
             <h1>ZeroBuzz Brew</h1>
             <h3 style="float: right; line-height: 1.6;">Hjemsted for den friskeste alkoholfri øl på markedet.<br>Nyd den kold og i varmt selskab.<br>Good vibes only.</h3>
-            <a href="underside.html" class="btn">Se udvalget her</a>     
+            <a href="produkter.html" class="btn">Se udvalget her</a>     
         </section>
 
-        <h2>Fordelene ved at vælge ZeroBuzz</h2>
+        <h2>Fuld smag & nul promille med ZeroBuzz</h2>
     
     <section class="image-section">
         <div class="image-box">
-            <img src="images/mongoehh.jpg" alt="fordele1">
+            <img src="images/forside1.png" alt="fordele1">
             <p>
-            <b>Lavt kalorieindhold -</b> Nyd en forfriskende øl uden at bekymre dig om kalorierne. Vores alkoholfri øl er skabt til at passe ind i en sund og balanceret livsstil.<br><br>
-            <b>Unikke smagsvarianter -</b> Vores eventyrlige udvalg sikrer, at der er noget for enhver smag.<br><br>
-            <b>Naturlige ingredienser -</b> Vi bruger kun de bedste, naturlige ingredienser i vores øl. Smag forskellen med alkoholfri øl, der er brygget med omhu og kvalitet.<br><br>
-            <b>Ingen tømmermænd -</b> Nyd øjeblikket uden bekymringer om ondt i hovedet dagen derpå. Vores alkoholfri øl giver dig friheden til at have det sjovt og forblive klar i hovedet.<br><br></p>
+            <b>Lavt kalorieindhold:</b><br> Nyd en forfriskende øl uden at bekymre dig om kalorierne. Vores alkoholfri øl er skabt til at passe ind i en sund og balanceret livsstil.<br><br>
+            <b>Unikke smagsvarianter:</b><br> Vores eventyrlige udvalg sikrer, at der er noget for enhver smag.<br><br>
+            <b>Naturlige ingredienser:</b><br> Vi bruger kun de bedste, naturlige ingredienser i vores øl. Smag forskellen med alkoholfri øl, der er brygget med omhu og kvalitet.<br><br>
+            <b>Og ikke mindst... ZERO tømmermænd:</b><br> Nyd øjeblikket uden bekymringer om ondt i hovedet dagen efter. Vores alkoholfri øl giver dig friheden til at have det sjovt og forblive klar i hovedet.<br><br></p>
         </div>
         <div class="image-box">
-            <img src="images/mongoehh.jpg" alt="fordele2">
-            <p><b>Et bryggeri, du kan regne med</b><br><br>Vi er passionerede omkring at skabe lækre, alkoholfri øl, der lader dig nyde øjeblikket uden kompromis.<br><br> Vores mission er at tilbyde en sundere, mere bevidst måde at slappe af på, samtidig med, at vi fremhæver samholdet og samværet med hinanden over alkohollen.<br><br>Derudover stræber vi efter bæredygtighed lige fra bryggeprocessen, til produktion og emballage - så du roligt kan drikke med god samvittighed.<br><br> Skål for en ny oplevelse!</p>
+            <img src="images/Forside2.png" alt="fordele2">
+            <p><b>Et bryggeri, du kan skænke din lid til</b><br><br>Vi er passionerede omkring at skabe lækre, alkoholfri øl, der lader dig nyde øjeblikket uden kompromis.<br><br> Vores mission er at tilbyde en sundere, mere bevidst måde at slappe af på, samtidig med, at vi fremhæver samholdet og samværet med hinanden over alkohollen.<br><br>Derudover stræber vi efter bæredygtighed lige fra bryggeprocessen, til produktion og emballage - så du roligt kan drikke med god samvittighed.<br><br> Skål for en ny oplevelse!<br><br>
+            <a href="omos.html" class="btn">Læs mere om ZeroBuzz Brew her</a></p>
         </div>
     </section>
     </main>
@@ -57,12 +63,18 @@
         Good vibes only.</p>
         <nav>
             <ul>
-                <li><a href="#kontakt">Kontakt os</a></li>
-                <li><a href="#vilkår">Vilkår og betingelser</a></li>
-                <li><a href="#privatliv">Privatlivspolitik</a></li>
-                <li><a href="#sociale-medier">Følg os på sociale medier</a></li>
+                <li><a href="#">Kontakt os</a></li>
+                <li><a href="#">Vilkår og betingelser</a></li>
+                <li><a href="#">Privatlivspolitik</a></li>
+                <li><a href="#">Følg os på sociale medier</a></li>
             </ul>
         </nav>
     </footer>
+    <script>
+        function toggleMenu() {
+            const navMenu = document.querySelector('nav');
+            navMenu.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
