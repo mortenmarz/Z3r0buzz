@@ -233,16 +233,17 @@ footer nav ul li a:hover {
 
 .product-container {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     gap: 6em;
+
+    flex-wrap: wrap; /* gør den noget?? */
 }
 
 .product-box {
     display: flex;
     align-items: center;
     gap: 1em;
-    border-bottom: 0.2em solid black; /* Add a thin black line at the bottom */
+    border-bottom: 0.2em solid black;
     padding: 1.5em;
 }
 
