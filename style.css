@@ -34,7 +34,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #7CB06D;
+    color: #89A67E;
     text-decoration: none;
     padding: 0.875em 1em;
     font-size: 1.45em;
@@ -229,6 +229,60 @@ footer nav ul li a:hover {
     margin: 4px 0;
 }
 
+/* Produkter-undersiden */
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 6em;
+}
+
+.product-box {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    border-bottom: 0.2em solid black; /* Add a thin black line at the bottom */
+    padding: 1.5em;
+}
+
+.product-box.reverse {
+    flex-direction: row-reverse;
+    gap: 6em;
+    margin-left: 5em;
+}
+
+.product-box img {
+    width: 30em;
+    height: auto;
+}
+
+.product-info {
+    max-width: 16em;
+    margin-left: 5em;
+    border: 0.25em dashed #FEC47F;
+    padding: 6em;
+    font-size: 1.3em;
+}
+
+.product-info .btn {
+    padding: 0.6em 1.25em;
+    background-color: #7CB06D;
+    color: #ffffff;
+    text-decoration: none;
+    border: none;
+    border-radius: 0.3125em;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    position: absolute;
+}
+
+.product-info .btn:hover {
+    background-color: #FEC47F;
+    color: #ffffff;
+    font-weight: bold;
+}
+
 /* Responsivt Web Design - Media Queries */
 
 /* Mobilvisning herunder */
@@ -320,6 +374,37 @@ footer nav ul li a:hover {
 
     .image-box p {
         font-size: 1.2em;
+    }
+
+    .product-container {
+        gap: 2em;
+    }
+
+    .product-box {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1em;
+    }
+
+    .product-box.reverse {
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .product-box img {
+        width: 100%;
+    }
+
+    .product-info {
+        max-width: 100%;
+        margin-left: 0;
+        padding: 2em;
+        font-size: 1em;
+    }
+
+    .product-info .btn {
+        position: static;
+        margin-top: 1em;
     }
 }
 
