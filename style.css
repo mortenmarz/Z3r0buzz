@@ -38,12 +38,13 @@ nav ul li a {
     text-decoration: none;
     padding: 0.875em 1em;
     font-size: 1.45em;
-    font-weight: bold;
+    font-weight: normal;
     transition: color 0.15s ease; /* Glidende overgang for farveskift ved hover */
 }
 
 nav ul li a:hover {
     color: #FEC47F;
+    font-weight: bold;
 }
 
 main {
@@ -235,6 +236,7 @@ footer nav ul li a:hover {
     display: flex;
     flex-direction: column;
     gap: 6em;
+    margin-top: -2em;
 
     flex-wrap: wrap; /* gør den noget?? */
 }
@@ -243,14 +245,14 @@ footer nav ul li a:hover {
     display: flex;
     align-items: center;
     gap: 1em;
-    border-bottom: 0.2em solid black;
+    border-bottom: 0.15em solid #FEC47F;
     padding: 1.5em;
 }
 
 .product-box.reverse {
     flex-direction: row-reverse;
     gap: 6em;
-    margin-left: 5em;
+    margin-left: 0em;
 }
 
 .product-box img {
@@ -282,6 +284,59 @@ footer nav ul li a:hover {
     background-color: #FEC47F;
     color: #ffffff;
     font-weight: bold;
+}
+
+/* Om os-undersiden */
+.hero2 {
+    background-image: url('images/forside2.png');
+    background-size: cover;
+    background-position: center;
+    height: 25em;
+    width: 90em;
+    padding: 2em 0;
+    margin-bottom: 3em;
+    margin: 3em;
+}
+
+.hero2 h2 {
+    color:#FEC47F;
+    font-size: 4em;
+    font-weight: normal;
+    margin-top: -1.8em;
+}
+
+.intro, .mission, .history, .team {
+    display: flex;
+    justify-content: space-around;
+    margin: 1.2em auto;
+    background-color: #89A67E;
+    max-width: 70em;
+    padding: 0 1em;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center; /* Centrerer teksten horisontalt */
+    text-align: left;  /* Centrerer teksten i midten */
+}
+
+.intro h2, .mission h2, .history h2, .team h2 {
+    font-size: 2.1em; /* Juster størrelsen efter behov */
+    margin-bottom: 0.5em; /* Tilføj lidt afstand under overskriften */
+    text-align: center;
+}
+
+.intro h2, .history h2 {
+    color:#ffffff;
+}
+
+.intro p, .mission p, .history p, .team p {
+    font-size: 1.4em;
+    margin-top: 0.5em;
+    width: 80%;
+    line-height: 1.8;
+}
+
+.mission, .team {
+    background-color: #FEC47F;
 }
 
 /* Responsivt Web Design - Media Queries */
@@ -378,13 +433,14 @@ footer nav ul li a:hover {
     }
 
     .product-container {
-        gap: 2em;
+        gap: 1em;
+        margin-top: -2em;
     }
 
     .product-box {
         flex-direction: column;
         align-items: flex-start;
-        padding: 1em;
+        padding: 2em;
     }
 
     .product-box.reverse {
@@ -399,13 +455,41 @@ footer nav ul li a:hover {
     .product-info {
         max-width: 100%;
         margin-left: 0;
-        padding: 2em;
-        font-size: 1em;
+        padding: 1.5em;
+        font-size: 1.1em;
     }
 
     .product-info .btn {
         position: static;
         margin-top: 1em;
+    }
+
+    .hero2 {
+        width: 100%;
+        margin-top: 0.8em;
+    }
+
+    .hero2 h2 {
+        font-size: 3.5em;
+        font-weight: bolder;
+        color: #FEC47F;
+        margin-top: -1.9em;
+    }
+
+    .intro,
+    .mission,
+    .history,
+    .team {
+        margin: 1em auto;
+        padding: 0.5em;
+        width: 98%;
+    }
+
+    .intro p,
+    .mission p,
+    .history p,
+    .team p {
+        font-size: 1.3em;
     }
 }
 
