@@ -56,7 +56,7 @@ main {
     margin-bottom: 3em;
 }
 
-/* Hero stilarter */
+/* Hero */
 .hero {
     display: flex;
     flex-direction: column;
@@ -170,7 +170,7 @@ h2 {
     font-weight: bold;
 }
 
-/* Footer-stilarter */
+/* Footer */
 footer {
     background-color: #000000;
     color: white; 
@@ -337,6 +337,54 @@ footer nav ul li a:hover {
 
 .mission, .team {
     background-color: #FEC47F;
+}
+
+/* FAQ-undersiden */
+.faq-container {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 1em;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq-item {
+    margin-bottom: 1em;
+}
+
+.faq-question {
+    width: 100%;
+    padding: 1em;
+    background: #FEC47F;
+    color: #000000;
+    border: none;
+    outline: none;
+    text-align: left;
+    font-size: 1.3em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.faq-question:hover {
+    background: #7CB06D;
+    font-weight: bold;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.faq-answer p {
+    padding: 0 1em;
+    margin: 0;
+    background: #f9f9f9;
+    border-left: 4px solid #7CB06D;
+    font-size: 1.3em;
+    font-family: 'Lato', sans-serif;
 }
 
 /* Responsivt Web Design - Media Queries */
