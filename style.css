@@ -67,7 +67,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url('images/hero1rigtig.png');
+    background-image: url('images/hero1rigtig.webp');
     background-size: cover;
     background-position: center;
     height: 60vh;
@@ -303,7 +303,7 @@ footer nav ul li a:hover {
 
 /* Om os-undersiden */
 .hero2 {
-    background-image: url('images/forside2.png');
+    background-image: url('images/forside2.webp');
     background-size: cover;
     background-position: center;
     height: 25em;
