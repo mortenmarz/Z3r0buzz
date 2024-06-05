@@ -4,6 +4,7 @@ body {
     background-color: #ffffff;
 }
 
+/* Styling for header-sektionen */
 header {
     padding: 1.25em;
     display: flex;
@@ -11,11 +12,13 @@ header {
     justify-content: space-between;
 }
 
+/* Styling for logo */
 .logo img {
     height: 11em;
     width: 11em;
 }
 
+/* Styling for navigationsmenu */
 nav {
     overflow: hidden;
 }
@@ -42,11 +45,13 @@ nav ul li a {
     transition: color 0.15s ease; /* Glidende overgang for farveskift ved hover */
 }
 
+/* Styling for hover-effekt på links i navigationsmenuen */
 nav ul li a:hover {
     color: #FEC47F;
     font-weight: bold;
 }
 
+/* Styling for hovedsektionen */
 main {
     display: flex;
     flex-direction: column;
@@ -84,11 +89,11 @@ main {
     font-size: 1.6em;
     transition: transform 0.3s ease; /* Jeg vil gerne have lidt visuelle effekter, så har tilføjet en glidende overgang til højre side når man hover teksten */
     line-height: 1.6;
-    float: right; /* kan også ændres til text-align: center ??? */
+    float: right;
 }
 
 .hero h3:hover {
-    transform: translateX(6.5em); /* Flytter teksten til højre ved hover */
+    transform: translateX(6.5em); /* Flytter hero h3-teksten til højre ved hover */
     color: #FEC47F;
     font-weight: bold;
 }
@@ -194,7 +199,7 @@ footer nav {
 }
 
 footer nav ul {
-    list-style-type: none; /* Fjern standard liste-stil */
+    list-style-type: none; /* Fjerner standard liste-stil */
     margin: 0;
     padding: 0;
     display: flex;
@@ -234,8 +239,7 @@ footer nav ul li a:hover {
     display: flex;
     flex-direction: column;
     gap: 6em;
-    
-    flex-wrap: wrap; /* gør den noget?? */
+    flex-wrap: wrap; 
 }
 
 .product-box {
@@ -284,9 +288,9 @@ footer nav ul li a:hover {
     cursor: pointer;
     transition: background-color 0.2s ease;
     position: relative;
-    text-align: center; /* Centrer knappens tekst */
-    display: block; /* Gør knappen til et blokelement */
-    margin: 1em auto; /* Centrerer knappen vandret ved at sætte marginen til auto */
+    text-align: center;
+    display: block;
+    margin: 1em auto;
     max-width: 18%;
     top: 1em;
 }
@@ -334,7 +338,7 @@ footer nav ul li a:hover {
 }
 
 .intro h2, .mission h2, .history h2, .team h2 {
-    font-size: 2.1em; /* Juster størrelsen efter behov */
+    font-size: 2.1em; 
     margin-bottom: 0.5em; /* Tilføj lidt afstand under overskriften */
     text-align: center;
 }
@@ -465,7 +469,7 @@ footer nav ul li a:hover {
     }
 
     nav ul li a {
-        display: inline-block; /* Skift til inline-block for at reducere bredden */
+        display: inline-block;
         width: 70%;
         font-size: 1.3em;
         padding: 0.8em;
@@ -531,7 +535,7 @@ footer nav ul li a:hover {
     }
 
     .product-box.reverse img {
-        margin-bottom: 2.5em; /* Tilføj mellemrum mellem billedet og teksten */
+        margin-bottom: 2.5em; /* Tilføjer mellemrum mellem billedet og teksten */
     }
 
     .product-box img {
@@ -547,7 +551,7 @@ footer nav ul li a:hover {
 
     .product-info .btn {
         text-align: center; /* Centrer knappens tekst */
-        display: block; /* Gør knappen til et blokelement */
+        display: block;
         margin: 1em auto; /* Centrerer knappen vandret ved at sætte marginen til auto */
         max-width: 30%;
     }
@@ -591,7 +595,7 @@ footer nav ul li a:hover {
     footer nav {
         margin-top: 2em; /* Mindre afstand til toppen af navigationen */
         margin: 1em; /* Justeret margin for mobilvisning */
-        display: block; /* Vis navigation på mobil */
+        display: block; /* Bedre navigation på mobil */
     }
 
     footer nav ul li {
@@ -600,18 +604,19 @@ footer nav ul li a:hover {
 
     footer nav ul li a {
         font-size: 1.1em; /* Større skriftstørrelse for mobil */
-        padding: 0.5em; /* Fjern den ekstra padding */
-        background-color: transparent; /* Fjern baggrundsfarve */
-        color: #7CB06D; /* Sørg for tekstfarven er korrekt */
+        padding: 0.5em;
+        background-color: transparent; 
+        color: #7CB06D;
         text-align: left;
     }
 
     footer nav ul li a:hover {
-        color: #FEC47F; /* Farve på linkteksten ved hover */
+        color: #FEC47F; /* Farver linkteksten ved hover */
         background-color: transparent; /* Ingen baggrundsfarve ved hover */
     }
 }
 
+/* Fjerner burgermenu ved højere opløsning end mobilvisning */
 @media (min-width: 769px) {
     .burger-menu {
         display: none;
